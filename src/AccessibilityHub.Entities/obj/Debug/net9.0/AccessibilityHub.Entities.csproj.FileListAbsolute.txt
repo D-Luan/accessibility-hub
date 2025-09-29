@@ -1,0 +1,12 @@
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\bin\Debug\net9.0\AccessibilityHub.Entities.deps.json
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\bin\Debug\net9.0\AccessibilityHub.Entities.dll
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\bin\Debug\net9.0\AccessibilityHub.Entities.pdb
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\AccessibilityHub.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\AccessibilityHub.Entities.AssemblyInfoInputs.cache
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\AccessibilityHub.Entities.AssemblyInfo.cs
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\AccessibilityHub.Entities.csproj.CoreCompileInputs.cache
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\AccessibilityHub.Entities.sourcelink.json
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\AccessibilityHub.Entities.dll
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\refint\AccessibilityHub.Entities.dll
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\AccessibilityHub.Entities.pdb
+C:\dev\repos\AccessibilityHub\src\AccessibilityHub.Entities\obj\Debug\net9.0\ref\AccessibilityHub.Entities.dll

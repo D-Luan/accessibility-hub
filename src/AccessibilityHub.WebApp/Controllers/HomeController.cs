@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using AccessibilityHub.WebApp.Models;
+using AccessibilityHub.Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccessibilityHub.WebApp.Controllers
