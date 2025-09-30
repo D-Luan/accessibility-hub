@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace AccessibilityHub.Infrastructure.Migrations
 {
-    [DbContext(typeof(AccessibilityContext))]
-    [Migration("20250929233202_InitialCreate")]
+    [DbContext(typeof(AccessibilityDbContext))]
+    [Migration("20250930131620_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

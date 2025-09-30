@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace AccessibilityHub.Infrastructure.Migrations
 {
-    [DbContext(typeof(AccessibilityContext))]
-    partial class AccessibilityContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(AccessibilityDbContext))]
+    partial class AccessibilityDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
