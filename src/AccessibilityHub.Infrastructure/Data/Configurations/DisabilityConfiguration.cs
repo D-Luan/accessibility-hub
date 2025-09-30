@@ -7,8 +7,7 @@ public class DisabilityConfiguration : IEntityTypeConfiguration<Disability>
     public void Configure(EntityTypeBuilder<Disability> builder)
     {
         builder.HasData(
-            new Disability { Id = 1, Name = "Auditiva", Description = "..." },
-            new Disability { Id = 2, Name = "Visual", Description = "..." }
+            new Disability { Id = 1, Name = "Hearing", Description = "..." }
         );
     }
 }
