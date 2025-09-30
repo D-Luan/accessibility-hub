@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AccessibilityHub.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfa79299efee87c519262beec50bdee0591e07dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87eec7b49b7b7e90ba457ec256c7ae7127ee95b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AccessibilityHub.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AccessibilityHub.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

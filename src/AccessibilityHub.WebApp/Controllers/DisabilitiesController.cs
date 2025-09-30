@@ -15,7 +15,15 @@ public class DisabilitiesController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var disabilities = await _disabilityService.GetAllDisabilitiesAsync();
-        return View(disabilities);
+        try
+        {
+            var disabilities = await _disabilityService.GetAllDisabilitiesAsync();
+
+            return View(disabilities);
+        }
+        catch (Exception ex)
+        {
+            return View("Error");
+        }
     }
 }
