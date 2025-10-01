@@ -1,5 +1,6 @@
 ﻿using AccessibilityHub.Entities.Models;
 using AccessibilityHub.WebApp.Services;
+using AccessibilityHub.WebApp.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccessibilityHub.WebApp.Controllers;
@@ -13,17 +14,23 @@ public class DisabilitiesController : Controller
         _disabilityService = disabilityService;
     }
 
+    [HttpGet]
     public async Task<IActionResult> Index()
     {
-        try
-        {
-            var disabilities = await _disabilityService.GetAllDisabilitiesAsync();
+        var disabilities = await _disabilityService.GetAllDisabilitiesAsync();
+        return View(disabilities);
+    }
 
-            return View(disabilities);
-        }
-        catch (Exception ex)
+    [HttpGet("{id}")]
+    public async Task<ActionResult<DisabilityDto>> Details(int id)
+    {
+        var disability = await _disabilityService.GetDisabilityByIdAsync(id);
+
+        if (disability == null)
         {
-            return View("Error");
+            return NotFound();
         }
+
+        return Ok(disability);
     }
 }
