@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AccessibilityHub.WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e71aa60fd952b3a0558775c64a0ff1ac5223df3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2db4ebe50cfe675890d3e44b77136f5177f3a2e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AccessibilityHub.WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AccessibilityHub.WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

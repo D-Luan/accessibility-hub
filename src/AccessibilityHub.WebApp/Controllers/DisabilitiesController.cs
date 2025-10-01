@@ -14,14 +14,12 @@ public class DisabilitiesController : Controller
         _disabilityService = disabilityService;
     }
 
-    [HttpGet]
     public async Task<IActionResult> Index()
     {
         var disabilities = await _disabilityService.GetAllDisabilitiesAsync();
         return View(disabilities);
     }
 
-    [HttpGet("{id}")]
     public async Task<ActionResult<DisabilityDto>> Details(int id)
     {
         var disability = await _disabilityService.GetDisabilityByIdAsync(id);
@@ -31,6 +29,6 @@ public class DisabilitiesController : Controller
             return NotFound();
         }
 
-        return Ok(disability);
+        return View(disability);
     }
 }
