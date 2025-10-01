@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\dev\\repos\\AccessibilityHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.entities\\models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|solutionrelative:src\\accessibilityhub.entities\\models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\dtos\\disabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\dtos\\disabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.entities\\models\\disability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|solutionrelative:src\\accessibilityhub.entities\\models\\disability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.entities\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|solutionrelative:src\\accessibilityhub.entities\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.infrastructure\\data\\accessibilitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|solutionrelative:src\\accessibilityhub.infrastructure\\data\\accessibilitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.infrastructure\\data\\configurations\\disabilityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|solutionrelative:src\\accessibilityhub.infrastructure\\data\\configurations\\disabilityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\views\\disabilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\views\\disabilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\controllers\\disabilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,12 +23,32 @@
       "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\dtos\\updatedisabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\dtos\\disabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\dtos\\disabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\dtos\\createdisabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\dtos\\createdisabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.infrastructure\\data\\configurations\\disabilityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|solutionrelative:src\\accessibilityhub.infrastructure\\data\\configurations\\disabilityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.entities\\models\\disability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|solutionrelative:src\\accessibilityhub.entities\\models\\disability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.entities\\models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|solutionrelative:src\\accessibilityhub.entities\\models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.entities\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C940EC1-64A2-4D2F-95C8-4F21A086ADF9}|src\\AccessibilityHub.Entities\\AccessibilityHub.Entities.csproj|solutionrelative:src\\accessibilityhub.entities\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.infrastructure\\data\\accessibilitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AFB2D51-00C6-4CF5-96F3-179EDDC55346}|src\\AccessibilityHub.Infrastructure\\AccessibilityHub.Infrastructure.csproj|solutionrelative:src\\accessibilityhub.infrastructure\\data\\accessibilitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\accessibilityhub.webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -57,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\views\\disabilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|solutionrelative:src\\accessibilityhub.webapp\\views\\disabilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D56BE47-3FF9-437D-B45C-FDEAE501DD35}|src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj|c:\\dev\\repos\\accessibilityhub\\src\\accessibilityhub.webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -98,89 +98,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "IDisabilityService.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T22:15:26.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Disability.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Disability.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.Entities\\Models\\Disability.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Disability.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.Entities\\Models\\Disability.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T22:11:58.461Z",
+              "WhenOpened": "2025-09-30T11:44:53.115Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Resource.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Resource.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.Entities\\Models\\Resource.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Resource.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.Entities\\Models\\Resource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "DisabilityDto.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T22:12:38.932Z",
+              "WhenOpened": "2025-09-29T23:41:45.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T23:20:36.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccessibilityDbContext.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T22:08:48.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DisabilityConfiguration.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T14:12:31.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "DisabilitiesController.cs",
               "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Controllers\\DisabilitiesController.cs",
               "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Controllers\\DisabilitiesController.cs",
@@ -193,19 +141,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IDisabilityService.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Services\\IDisabilityService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:44:53.115Z"
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
+              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T12:29:43.092Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "UpdateDisabilityDto.cs",
               "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Dtos\\UpdateDisabilityDto.cs",
               "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Dtos\\UpdateDisabilityDto.cs",
@@ -213,23 +162,12 @@
               "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Dtos\\UpdateDisabilityDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T23:44:42.255Z"
+              "WhenOpened": "2025-09-29T23:44:42.255Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DisabilityDto.cs",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
-              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Dtos\\DisabilityDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T23:41:45.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "CreateDisabilityDto.cs",
               "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Dtos\\CreateDisabilityDto.cs",
               "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Dtos\\CreateDisabilityDto.cs",
@@ -237,7 +175,81 @@
               "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Dtos\\CreateDisabilityDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T23:42:29.924Z"
+              "WhenOpened": "2025-09-29T23:42:29.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DisabilityConfiguration.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.Infrastructure\\Data\\Configurations\\DisabilityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T14:12:31.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.Entities\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T23:20:36.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Resource.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Resource.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.Entities\\Models\\Resource.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Resource.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.Entities\\Models\\Resource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T22:12:38.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Disability.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Disability.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.Entities\\Models\\Disability.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Entities\\Models\\Disability.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.Entities\\Models\\Disability.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T22:11:58.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Extensions\\ServiceExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T22:15:26.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccessibilityDbContext.cs",
+              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
+              "RelativeDocumentMoniker": "src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
+              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
+              "RelativeToolTip": "src\\AccessibilityHub.Infrastructure\\Data\\AccessibilityDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T22:08:48.792Z"
             },
             {
               "$type": "Document",
@@ -253,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AccessibilityHub.WebApp.csproj",
               "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj",
               "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\AccessibilityHub.WebApp.csproj",
@@ -265,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\appsettings.json",
               "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\appsettings.json",
@@ -277,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Program.cs",
               "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Program.cs",
@@ -286,18 +298,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T22:27:36.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
-              "ToolTip": "C:\\dev\\repos\\AccessibilityHub\\src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
-              "RelativeToolTip": "src\\AccessibilityHub.WebApp\\Views\\Disabilities\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T12:29:43.092Z"
             },
             {
               "$type": "Document",
