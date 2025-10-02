@@ -19,4 +19,16 @@ public class ResourceController : Controller
         var resources = await _resourceService.GetAllResourcesAsync();
         return View(resources);
     }
+
+    public async Task<ActionResult<ResourceDto>> Details(int id)
+    {
+        var resource = await _resourceService.GetResourceByIdAsync(id);
+
+        if (resource == null)
+        {
+            return NotFound();
+        }
+
+        return View(resource);
+    }
 }
