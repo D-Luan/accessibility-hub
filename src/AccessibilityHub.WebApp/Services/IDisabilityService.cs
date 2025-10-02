@@ -47,8 +47,5 @@ public interface IDisabilityService
 
             return disabilityDto;
         }
-
-        public async Task<>
-
     }
 }

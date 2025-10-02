@@ -24,7 +24,9 @@ public interface IResourceService
                 {
                     Id = r.Id,
                     Name = r.Name,
-                    Description = r.Description
+                    Description = r.Description,
+                    Url = r.Url,
+                    Category = r.Category
                 })
                 .ToListAsync();
 
