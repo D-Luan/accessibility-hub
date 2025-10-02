@@ -16,6 +16,7 @@ public class ResourceController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var 
+        var resources = await _resourceService.GetAllResourcesAsync();
+        return View(resources);
     }
 }
