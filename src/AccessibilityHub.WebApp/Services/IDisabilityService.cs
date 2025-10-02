@@ -39,8 +39,8 @@ public interface IDisabilityService
                 .Where(d => d.Id == id)
                 .Select(d => new DisabilityDto
                 {
-                    Name = d.Name,
                     Id = d.Id,
+                    Name = d.Name,
                     Description = d.Description
                 })
                 .SingleOrDefaultAsync();
