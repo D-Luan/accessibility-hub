@@ -57,7 +57,7 @@ The current version (MVP) of the Accessibility Hub provides the core functionali
 
 ## Screenshots
 
-Current status of the project:
+**Current status of the project's MVP. As the focus is on backend functionality, the UI has been kept clean and functional. The frontend will be enhanced in a future phase.**
 
 ![Initial Page](docs/images/disabilities-index.png)
 ![Resource Create Page](docs/images/resource-create.png)
