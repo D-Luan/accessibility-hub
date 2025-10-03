@@ -7,7 +7,7 @@ public static class ServiceExtensions
 {
     public static void ConfigurePersistence(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<AccessibilityContext>(opt =>
+        services.AddDbContext<AccessibilityDbContext>(opt =>
             opt.UseNpgsql(configuration.GetConnectionString("AccessibilityHubDb"))
         );
     }

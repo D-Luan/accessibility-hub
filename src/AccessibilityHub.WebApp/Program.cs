@@ -1,6 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using AccessibilityHub.Infrastructure.Data;
 using AccessibilityHub.WebApp.Extensions;
+using AccessibilityHub.WebApp.Services;
+using AccessibilityHub.Entities.Models;
+using static AccessibilityHub.WebApp.Services.IDisabilityService;
+using static AccessibilityHub.WebApp.Services.IResourceService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +12,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IDisabilityService, DisabilityService>();
+builder.Services.AddScoped<IResourceService, ResourceService>();
 
 builder.Services.ConfigurePersistence(builder.Configuration);
 
