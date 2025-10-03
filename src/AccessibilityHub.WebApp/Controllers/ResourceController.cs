@@ -31,4 +31,23 @@ public class ResourceController : Controller
 
         return View(resource);
     }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<ActionResult<ResourceDto>> Create([Bind("Name, Description, Url, Category, DisabilityId")] CreateResourceDto createDto)
+    {
+        if (ModelState.IsValid)
+        {
+            var createdResource = await _resourceService.CreateResourceAsync(createDto);
+            return RedirectToAction(nameof(Details), new {id = createdResource.Id});
+        }
+
+        return View(createDto);
+    }
 }
