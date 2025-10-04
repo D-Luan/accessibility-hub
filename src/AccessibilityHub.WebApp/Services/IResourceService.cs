@@ -13,6 +13,8 @@ public interface IResourceService
     Task<List<ResourceDto>> GetAllResourcesAsync();
     Task<ResourceDto?> GetResourceByIdAsync(int id);
     Task<ResourceDto> CreateResourceAsync(CreateResourceDto createDto);
+    Task<UpdateResourceDto> GetResourceForUpdateAsync(int id);
+    Task<bool> UpdateResourceAsync(int id, UpdateResourceDto resourceDto);
 
     public class ResourceService : IResourceService
     {
@@ -78,6 +80,62 @@ public interface IResourceService
             };
 
             return resultDto;
+        }
+
+        public async Task<UpdateResourceDto> GetResourceForUpdateAsync(int id)
+        {
+            var resource = await _context.Resources.FindAsync(id);
+            if (resource == null)
+            {
+                return null;
+            }
+
+            return new UpdateResourceDto
+            {
+                Id = resource.Id,
+                Name = resource.Name,
+                Description = resource.Description,
+                Url = resource.Url,
+                Category = resource.Category
+            };
+        }
+
+        public async Task<bool> UpdateResourceAsync(int id, UpdateResourceDto updateDto)
+        {
+            var resourceEntity = await _context.Resources.FindAsync(id);
+
+            if (resourceEntity == null)
+            {
+                return false;
+            }
+
+            resourceEntity.Name = updateDto.Name;
+            resourceEntity.Description = updateDto.Description;
+            resourceEntity.Url = updateDto.Url;
+            resourceEntity.Category = updateDto.Category;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ResourceExists(id))
+                {
+                    return false;
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return true;
+        }
+
+        private bool ResourceExists(int id)
+        {
+            return _context.Resources.Any(e => e.Id == id);
         }
     }
 }
