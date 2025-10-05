@@ -102,4 +102,35 @@ public class ResourceController : Controller
 
         return View(updateDto);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var resourceToDelete = await _resourceService.GetDeleteResourceById(id.Value);
+        if (resourceToDelete == null)
+        {
+            return NotFound();
+        }
+
+        return View(resourceToDelete);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteResourceConfirmed(int id)
+    {
+        var resourceToDelete = await _resourceService.DeleteResource(id);
+
+        if (!resourceToDelete)
+        {
+            return NotFound();
+        }
+
+        return RedirectToAction(nameof(Index));
+    }
 }
