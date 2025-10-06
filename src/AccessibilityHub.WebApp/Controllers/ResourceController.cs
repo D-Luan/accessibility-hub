@@ -1,29 +1,47 @@
 ﻿using AccessibilityHub.Entities.Models;
 using AccessibilityHub.WebApp.Services;
 using AccessibilityHub.WebApp.Dtos;
+using AccessibilityHub.WebApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
 
 namespace AccessibilityHub.WebApp.Controllers;
 
 public class ResourceController : Controller
 {
     private readonly IResourceService _resourceService;
+    private readonly IDisabilityService _disabilityService;
 
-    public ResourceController(IResourceService resourceService)
+    public ResourceController(IResourceService resourceService, IDisabilityService disabilityService)
     {
         _resourceService = resourceService;
+        _disabilityService = disabilityService;
     }
 
     [HttpGet]
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int disabilityId)
     {
+        var disability = await _disabilityService.GetDisabilityByIdAsync(disabilityId);
+        if (disability == null)
+        {
+            return NotFound();
+        }
+
         var resources = await _resourceService.GetAllResourcesAsync();
-        return View(resources);
+
+        var viewModel = new DisabilityResourcesViewModel
+        {
+            DisabilityId = disability.Id,
+            DisabilityName = disability.Name,
+            Resources = resources
+        };
+
+        return View(viewModel);
     }
 
     [HttpGet]
-    public async Task<ActionResult<ResourceDto>> Details(int id)
+    public async Task<ActionResult<ResourceDto>> Details(int disabilityId, int id)
     {
         var resource = await _resourceService.GetResourceByIdAsync(id);
 
@@ -32,13 +50,24 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        return View(resource);
+        var model = new ResourceByIdViewModel
+        {
+            DisabilityId = disabilityId,
+            Resource = resource
+        };
+
+        return View(model);
     }
 
     [HttpGet]
-    public IActionResult Create()
+    public IActionResult Create(int disabilityId)
     {
-        return View();
+        var model = new CreateResourceDto
+        {
+            DisabilityId = disabilityId
+        };
+
+        return View(model);
     }
 
     [HttpPost]
@@ -55,7 +84,7 @@ public class ResourceController : Controller
     }
 
     [HttpGet]
-    public async Task<IActionResult> Edit(int? id)
+    public async Task<IActionResult> Edit(int disabilityId, int? id)
     {
         if (id == null || id == 0)
         {
@@ -69,7 +98,13 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        return View(resourceToEdit);
+        var model = new ResourceEditViewModel
+        {
+            DisabilityId = disabilityId,
+            Resource = resourceToEdit
+        };
+
+        return View(model);
     }
 
     [HttpPost]
@@ -104,7 +139,7 @@ public class ResourceController : Controller
     }
 
     [HttpGet]
-    public async Task<IActionResult> Delete(int? id)
+    public async Task<IActionResult> Delete(int disabilityId, int? id)
     {
         if (id == null)
         {
@@ -117,7 +152,13 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        return View(resourceToDelete);
+        var model = new ResourceByIdViewModel
+        {
+            DisabilityId = disabilityId,
+            Resource = resourceToDelete
+        };
+
+        return View(model);
     }
 
     [HttpPost, ActionName("Delete")]
