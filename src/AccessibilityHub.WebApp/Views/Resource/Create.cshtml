@@ -33,9 +33,7 @@
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DisabilityId" class="control-label"></label>
-                <input asp-for="DisabilityId" class="form-control" />
-                <span asp-validation-for="DisabilityId" class="text-danger"></span>
+                <input type="hidden" asp-for="DisabilityId" />
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -45,7 +43,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" asp-route-disabilityId="@Model.DisabilityId">Back to List</a>
 </div>
 
 @section Scripts {
