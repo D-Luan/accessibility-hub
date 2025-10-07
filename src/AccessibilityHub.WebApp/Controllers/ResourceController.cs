@@ -28,7 +28,7 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        var resources = await _resourceService.GetAllResourcesAsync();
+        var resources = await _resourceService.GetDisabilityResourcesByIdAsync(disabilityId);
 
         var viewModel = new DisabilityResourcesViewModel
         {
@@ -72,12 +72,12 @@ public class ResourceController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<ActionResult<ResourceDto>> Create([Bind("Name, Description, Url, Category, DisabilityId")] CreateResourceDto createDto)
+    public async Task<ActionResult> Create(CreateResourceDto createDto)
     {
         if (ModelState.IsValid)
         {
             var createdResource = await _resourceService.CreateResourceAsync(createDto);
-            return RedirectToAction(nameof(Details), new {id = createdResource.Id});
+            return RedirectToAction(nameof(Details), new {id = createdResource.Id, disabilityId = createDto.DisabilityId});
         }
 
         return View(createDto);
@@ -109,9 +109,9 @@ public class ResourceController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id, Name, Description, Url, Category")] UpdateResourceDto updateDto)
+    public async Task<IActionResult> Edit(int id, ResourceEditViewModel model)
     {
-        if (id != updateDto.Id)
+        if (id != model.Resource.Id)
         {
             return NotFound();
         }
@@ -120,14 +120,14 @@ public class ResourceController : Controller
         {
             try
             {
-                var success = await _resourceService.UpdateResourceAsync(id, updateDto);
+                var success = await _resourceService.UpdateResourceAsync(id, model.Resource);
 
                 if (!success)
                 {
                     return NotFound();
                 }
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", new { disabilityId = model.DisabilityId});
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -135,7 +135,7 @@ public class ResourceController : Controller
             }
         }
 
-        return View(updateDto);
+        return View(model);
     }
 
     [HttpGet]
@@ -163,7 +163,7 @@ public class ResourceController : Controller
 
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteResourceConfirmed(int id)
+    public async Task<IActionResult> DeleteResourceConfirmed(int id, int disabilityId)
     {
         var resourceToDelete = await _resourceService.DeleteResource(id);
 
@@ -172,6 +172,6 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        return RedirectToAction(nameof(Index));
+        return RedirectToAction("Index", new { disabilityId = disabilityId });
     }
 }
