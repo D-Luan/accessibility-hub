@@ -146,7 +146,7 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        var resourceToDelete = await _resourceService.GetDeleteResourceById(id.Value);
+        var resourceToDelete = await _resourceService.GetResourceByIdAsync(id.Value);
         if (resourceToDelete == null)
         {
             return NotFound();
@@ -165,7 +165,7 @@ public class ResourceController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteResourceConfirmed(int id, int disabilityId)
     {
-        var resourceToDelete = await _resourceService.DeleteResource(id);
+        var resourceToDelete = await _resourceService.DeleteResourceAsync(id);
 
         if (!resourceToDelete)
         {

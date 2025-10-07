@@ -16,8 +16,7 @@ public interface IResourceService
     Task<ResourceDto> CreateResourceAsync(CreateResourceDto createDto);
     Task<UpdateResourceDto> GetResourceForUpdateAsync(int id);
     Task<bool> UpdateResourceAsync(int id, UpdateResourceDto resourceDto);
-    Task<ResourceDto?> GetDeleteResourceById(int id);
-    Task<bool> DeleteResource(int id);
+    Task<bool> DeleteResourceAsync(int id);
 
     public class ResourceService : IResourceService
     {
@@ -154,24 +153,7 @@ public interface IResourceService
             return true;
         }
 
-        public async Task<ResourceDto?> GetDeleteResourceById(int id)
-        {
-            var resourceDto = await _context.Resources
-                .Where(r => r.Id == id)
-                .Select(r => new ResourceDto
-                {
-                    Id = r.Id,
-                    Name = r.Name,
-                    Description = r.Description,
-                    Url = r.Url,
-                    Category = r.Category
-                })
-                .FirstOrDefaultAsync();
-
-            return resourceDto;
-        }
-
-        public async Task<bool> DeleteResource(int id)
+        public async Task<bool> DeleteResourceAsync(int id)
         {
             var resource = await _context.Resources.FindAsync(id);
 
