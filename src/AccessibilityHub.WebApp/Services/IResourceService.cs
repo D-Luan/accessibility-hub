@@ -11,6 +11,7 @@ namespace AccessibilityHub.WebApp.Services;
 public interface IResourceService
 {
     Task<List<ResourceDto>> GetAllResourcesAsync();
+    Task<List<ResourceDto>> GetDisabilityResourcesByIdAsync(int disabilityId);
     Task<ResourceDto?> GetResourceByIdAsync(int id);
     Task<ResourceDto> CreateResourceAsync(CreateResourceDto createDto);
     Task<UpdateResourceDto> GetResourceForUpdateAsync(int id);
@@ -41,6 +42,24 @@ public interface IResourceService
 
             return resourceDto;
         }
+
+        public async Task<List<ResourceDto>> GetDisabilityResourcesByIdAsync(int disabilityId)
+        {
+            var resourceDto = await _context.Resources
+                .Where(r => r.DisabilityId == disabilityId)
+                .Select(r => new ResourceDto
+                {
+                    Id = r.Id,
+                    Name = r.Name,
+                    Description = r.Description,
+                    Url = r.Url,
+                    Category = r.Category
+                })
+                .ToListAsync();
+
+            return resourceDto;
+        }
+
         public async Task<ResourceDto?> GetResourceByIdAsync(int id)
         {
             var resourceDto = await _context.Resources
