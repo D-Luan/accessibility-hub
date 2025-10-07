@@ -1,8 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using AccessibilityHub.Infrastructure.Data;
-using AccessibilityHub.WebApp.Extensions;
-using AccessibilityHub.WebApp.Services;
 using AccessibilityHub.Entities.Models;
+using AccessibilityHub.Infrastructure.Data;
+using AccessibilityHub.WebApp.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using static AccessibilityHub.WebApp.Services.IDisabilityService;
 using static AccessibilityHub.WebApp.Services.IResourceService;
 
@@ -16,7 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IDisabilityService, DisabilityService>();
 builder.Services.AddScoped<IResourceService, ResourceService>();
 
-builder.Services.ConfigurePersistence(builder.Configuration);
+builder.Services.AddDbContext<AccessibilityDbContext>(opt =>
+            opt.UseNpgsql(builder.Configuration.GetConnectionString("AccessibilityHubDb")));
 
 var app = builder.Build();
 
