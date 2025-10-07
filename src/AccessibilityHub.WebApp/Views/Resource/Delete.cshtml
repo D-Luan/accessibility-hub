@@ -39,7 +39,8 @@
 
     <form asp-action="Delete">
         <input type="hidden" asp-for="Resource.Id" />
+        <input type="hidden" name="disabilityId" value="@Model.DisabilityId" />
         <input type="submit" value="Delete" class="btn btn-danger" />
-        <a asp-action="Index" asp-route-id="@Model.Resource.Id" asp-route-disabilityId="@Model.DisabilityId">Back to List</a>
+        <a asp-action="Index" asp-route-disabilityId="@Model.DisabilityId">Back to List</a>
     </form>
 </div>
