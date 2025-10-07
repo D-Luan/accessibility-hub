@@ -109,7 +109,7 @@ public interface IResourceService
             {
                 return null;
             }
-
+            
             return new UpdateResourceDto
             {
                 Id = resource.Id,
