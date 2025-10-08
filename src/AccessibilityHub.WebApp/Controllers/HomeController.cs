@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using AccessibilityHub.Entities.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace AccessibilityHub.WebApp.Controllers
 {

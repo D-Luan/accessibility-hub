@@ -1,10 +1,8 @@
-﻿using AccessibilityHub.Entities.Models;
+﻿using AccessibilityHub.WebApp.Dtos;
 using AccessibilityHub.WebApp.Services;
-using AccessibilityHub.WebApp.Dtos;
 using AccessibilityHub.WebApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata.Ecma335;
 
 namespace AccessibilityHub.WebApp.Controllers;
 
@@ -34,14 +32,14 @@ public class ResourceController : Controller
         {
             DisabilityId = disability.Id,
             DisabilityName = disability.Name,
-            Resources = resources
+            Resources = resources,
         };
 
         return View(viewModel);
     }
 
     [HttpGet]
-    public async Task<ActionResult<ResourceDto>> Details(int disabilityId, int id)
+    public async Task<ActionResult> Details(int disabilityId, int id)
     {
         var resource = await _resourceService.GetResourceByIdAsync(id);
 
@@ -50,10 +48,10 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        var model = new ResourceByIdViewModel
+        var model = new ResourceDetailViewModel
         {
             DisabilityId = disabilityId,
-            Resource = resource
+            Resource = resource,
         };
 
         return View(model);
@@ -64,7 +62,7 @@ public class ResourceController : Controller
     {
         var model = new CreateResourceDto
         {
-            DisabilityId = disabilityId
+            DisabilityId = disabilityId,
         };
 
         return View(model);
@@ -77,7 +75,7 @@ public class ResourceController : Controller
         if (ModelState.IsValid)
         {
             var createdResource = await _resourceService.CreateResourceAsync(createDto);
-            return RedirectToAction(nameof(Details), new {id = createdResource.Id, disabilityId = createDto.DisabilityId});
+            return RedirectToAction(nameof(Details), new { id = createdResource.Id, disabilityId = createDto.DisabilityId });
         }
 
         return View(createDto);
@@ -92,7 +90,7 @@ public class ResourceController : Controller
         }
 
         var resourceToEdit = await _resourceService.GetResourceForUpdateAsync(id.Value);
-        
+
         if (resourceToEdit == null)
         {
             return NotFound();
@@ -101,7 +99,7 @@ public class ResourceController : Controller
         var model = new ResourceEditViewModel
         {
             DisabilityId = disabilityId,
-            Resource = resourceToEdit
+            Resource = resourceToEdit,
         };
 
         return View(model);
@@ -127,11 +125,11 @@ public class ResourceController : Controller
                     return NotFound();
                 }
 
-                return RedirectToAction("Index", new { disabilityId = model.DisabilityId});
+                return RedirectToAction("Index", new { disabilityId = model.DisabilityId });
             }
             catch (DbUpdateConcurrencyException)
             {
-                ModelState.AddModelError("", "Unable to save changes. The resource may have been modified or deleted by another user.");
+                ModelState.AddModelError(string.Empty, "Unable to save changes. The resource may have been modified or deleted by another user.");
             }
         }
 
@@ -152,18 +150,19 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        var model = new ResourceByIdViewModel
+        var model = new ResourceDetailViewModel
         {
             DisabilityId = disabilityId,
-            Resource = resourceToDelete
+            Resource = resourceToDelete,
         };
 
         return View(model);
     }
 
-    [HttpPost, ActionName("Delete")]
+    [HttpPost]
+    [ActionName("Delete")]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteResourceConfirmed(int id, int disabilityId)
+    public async Task<IActionResult> DeleteConfirmed(int id, int disabilityId)
     {
         var resourceToDelete = await _resourceService.DeleteResourceAsync(id);
 
