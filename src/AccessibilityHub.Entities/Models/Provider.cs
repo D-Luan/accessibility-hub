@@ -1,6 +1,6 @@
 ﻿namespace AccessibilityHub.Entities.Models;
 
-public class Resource
+public class Provider
 {
     public int Id { get; set; }
     public string Name { get; set; }

@@ -11,7 +11,7 @@ public class AccessibilityDbContext : DbContext
     }
 
     public DbSet<Disability> Disabilities { get; set; }
-    public DbSet<Resource> Resources { get; set; }
+    public DbSet<Provider> Providers { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -1,0 +1,54 @@
+﻿@model AccessibilityHub.WebApp.ViewModels.ProviderEditViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Provider</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Provider.Id" />
+            <div class="form-group">
+                <label asp-for="Provider.Name" class="control-label"></label>
+                <input asp-for="Provider.Name" class="form-control" />
+                <span asp-validation-for="Provider.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Provider.Description" class="control-label"></label>
+                <input asp-for="Provider.Description" class="form-control" />
+                <span asp-validation-for="Provider.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Provider.Url" class="control-label"></label>
+                <input asp-for="Provider.Url" class="form-control" />
+                <span asp-validation-for="Provider.Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Provider.Category" class="control-label"></label>
+                <input asp-for="Provider.Category" class="form-control" />
+                <span asp-validation-for="Provider.Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="DisabilityId" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-disabilityId="@Model.DisabilityId">Back to List</a>
+</div>
+
+@section Scripts {
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

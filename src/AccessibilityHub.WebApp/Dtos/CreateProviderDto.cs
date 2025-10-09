@@ -2,7 +2,7 @@
 
 namespace AccessibilityHub.WebApp.Dtos;
 
-public class CreateResourceDto
+public class CreateProviderDto
 {
     [Required(ErrorMessage = "The Name field is required.")]
     [StringLength(100, ErrorMessage = "The name cannot exceed 100 characters.")]

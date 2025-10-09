@@ -6,5 +6,5 @@ public class Disability
     public string Name { get; set; }
     public string? Description { get; set; }
 
-    public virtual ICollection<Resource> Resources { get; set; } = new List<Resource>();
+    public virtual ICollection<Provider> Providers { get; set; } = new List<Provider>();
 }

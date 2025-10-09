@@ -5,8 +5,8 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to Accessibility Hub</h1>
-    <p>Select a topic below to explore resources.</p>
+    <h1 class="display-4">Disabilities Services</h1>
+    <p>Select a topic below to explore Providers.</p>
 </div>
 
 <hr />
@@ -17,15 +17,10 @@
         <div class="list-group">
             @foreach (var disability in Model)
             {
-                <a asp-controller="Resources" asp-action="Index" asp-route-disabilityId="@disability.Id" class="list-group-item list-group-item-action">
+                <a asp-controller="Provider" asp-action="Index" asp-route-disabilityId="@disability.Id" class="list-group-item list-group-item-action">
                     @disability.Name
                 </a>
             }
         </div>
-    </div>
-
-    <div class="col-md-9">
-        <h2>Features</h2>
-        <p>Key content (such as resources for your selected disability) will appear here in the future.</p>
     </div>
 </div>
