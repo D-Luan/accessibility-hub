@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IDisabilityService, DisabilityService>();
-builder.Services.AddScoped<IResourceService, ResourceService>();
+builder.Services.AddScoped<IProviderService, ProviderService>();
 
 builder.Services.AddDbContext<AccessibilityDbContext>(opt =>
             opt.UseNpgsql(builder.Configuration.GetConnectionString("AccessibilityHubDb")));

@@ -1,4 +1,4 @@
-﻿@model AccessibilityHub.WebApp.ViewModels.DisabilityResourcesViewModel
+﻿@model AccessibilityHub.WebApp.ViewModels.DisabilityProvidersViewModel
 
 @{
     ViewData["Title"] = $"{@Model.DisabilityName} Services";
@@ -14,22 +14,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Resources.FirstOrDefault().Name)
+                @Html.DisplayNameFor(model => model.Providers.FirstOrDefault().Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Resources.FirstOrDefault().Description)
+                @Html.DisplayNameFor(model => model.Providers.FirstOrDefault().Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Resources.FirstOrDefault().Url)
+                @Html.DisplayNameFor(model => model.Providers.FirstOrDefault().Url)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Resources.FirstOrDefault().Category)
+                @Html.DisplayNameFor(model => model.Providers.FirstOrDefault().Category)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Resources)
+        @foreach (var item in Model.Providers)
         {
             <tr>
                 <td>

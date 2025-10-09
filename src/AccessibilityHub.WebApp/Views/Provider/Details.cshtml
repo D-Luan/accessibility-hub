@@ -1,0 +1,42 @@
+﻿@model AccessibilityHub.WebApp.ViewModels.ProviderDetailViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Provider</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Provider.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Provider.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Provider.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Provider.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Provider.Url)
+        </dt>
+        <dd class="col-sm-10">
+            <a href="@Model.Provider.Url" target="_blank">@Model.Provider.Url</a>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Provider.Category)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Provider.Category)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Provider.Id" asp-route-disabilityId="@Model.DisabilityId">Edit</a>
+    <a asp-action="Index" asp-route-disabilityId="@Model.DisabilityId">Back to List</a>
+</div>

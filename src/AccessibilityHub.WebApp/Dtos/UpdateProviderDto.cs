@@ -2,7 +2,7 @@
 
 namespace AccessibilityHub.WebApp.Dtos;
 
-public class UpdateResourceDto
+public class UpdateProviderDto
 {
     public int Id { get; set; }
 

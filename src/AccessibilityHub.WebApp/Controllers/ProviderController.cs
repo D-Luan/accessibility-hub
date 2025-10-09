@@ -6,14 +6,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AccessibilityHub.WebApp.Controllers;
 
-public class ResourceController : Controller
+public class ProviderController : Controller
 {
-    private readonly IResourceService _resourceService;
+    private readonly IProviderService _providerService;
     private readonly IDisabilityService _disabilityService;
 
-    public ResourceController(IResourceService resourceService, IDisabilityService disabilityService)
+    public ProviderController(IProviderService providerService, IDisabilityService disabilityService)
     {
-        _resourceService = resourceService;
+        _providerService = providerService;
         _disabilityService = disabilityService;
     }
 
@@ -26,13 +26,13 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        var resources = await _resourceService.GetDisabilityResourcesByIdAsync(disabilityId);
+        var providers = await _providerService.GetDisabilityProvidersByIdAsync(disabilityId);
 
-        var viewModel = new DisabilityResourcesViewModel
+        var viewModel = new DisabilityProvidersViewModel
         {
             DisabilityId = disability.Id,
             DisabilityName = disability.Name,
-            Resources = resources,
+            Providers = providers,
         };
 
         return View(viewModel);
@@ -41,17 +41,17 @@ public class ResourceController : Controller
     [HttpGet]
     public async Task<ActionResult> Details(int disabilityId, int id)
     {
-        var resource = await _resourceService.GetResourceByIdAsync(id);
+        var provider = await _providerService.GetProviderByIdAsync(id);
 
-        if (resource == null)
+        if (provider == null)
         {
             return NotFound();
         }
 
-        var model = new ResourceDetailViewModel
+        var model = new ProviderDetailViewModel
         {
             DisabilityId = disabilityId,
-            Resource = resource,
+            Provider = provider,
         };
 
         return View(model);
@@ -60,7 +60,7 @@ public class ResourceController : Controller
     [HttpGet]
     public IActionResult Create(int disabilityId)
     {
-        var model = new CreateResourceDto
+        var model = new CreateProviderDto
         {
             DisabilityId = disabilityId,
         };
@@ -70,12 +70,12 @@ public class ResourceController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<ActionResult> Create(CreateResourceDto createDto)
+    public async Task<ActionResult> Create(CreateProviderDto createDto)
     {
         if (ModelState.IsValid)
         {
-            var createdResource = await _resourceService.CreateResourceAsync(createDto);
-            return RedirectToAction(nameof(Details), new { id = createdResource.Id, disabilityId = createDto.DisabilityId });
+            var createdProvider = await _providerService.CreateProviderAsync(createDto);
+            return RedirectToAction(nameof(Details), new { id = createdProvider.Id, disabilityId = createDto.DisabilityId });
         }
 
         return View(createDto);
@@ -89,17 +89,17 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        var resourceToEdit = await _resourceService.GetResourceForUpdateAsync(id.Value);
+        var providerToEdit = await _providerService.GetProviderForUpdateAsync(id.Value);
 
-        if (resourceToEdit == null)
+        if (providerToEdit == null)
         {
             return NotFound();
         }
 
-        var model = new ResourceEditViewModel
+        var model = new ProviderEditViewModel
         {
             DisabilityId = disabilityId,
-            Resource = resourceToEdit,
+            Provider = providerToEdit,
         };
 
         return View(model);
@@ -107,9 +107,9 @@ public class ResourceController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, ResourceEditViewModel model)
+    public async Task<IActionResult> Edit(int id, ProviderEditViewModel model)
     {
-        if (id != model.Resource.Id)
+        if (id != model.Provider.Id)
         {
             return NotFound();
         }
@@ -118,7 +118,7 @@ public class ResourceController : Controller
         {
             try
             {
-                var success = await _resourceService.UpdateResourceAsync(id, model.Resource);
+                var success = await _providerService.UpdateProviderAsync(id, model.Provider);
 
                 if (!success)
                 {
@@ -129,7 +129,7 @@ public class ResourceController : Controller
             }
             catch (DbUpdateConcurrencyException)
             {
-                ModelState.AddModelError(string.Empty, "Unable to save changes. The resource may have been modified or deleted by another user.");
+                ModelState.AddModelError(string.Empty, "Unable to save changes. The Provider may have been modified or deleted by another user.");
             }
         }
 
@@ -144,16 +144,16 @@ public class ResourceController : Controller
             return NotFound();
         }
 
-        var resourceToDelete = await _resourceService.GetResourceByIdAsync(id.Value);
-        if (resourceToDelete == null)
+        var providerToDelete = await _providerService.GetProviderByIdAsync(id.Value);
+        if (providerToDelete == null)
         {
             return NotFound();
         }
 
-        var model = new ResourceDetailViewModel
+        var model = new ProviderDetailViewModel
         {
             DisabilityId = disabilityId,
-            Resource = resourceToDelete,
+            Provider = providerToDelete,
         };
 
         return View(model);
@@ -164,9 +164,9 @@ public class ResourceController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id, int disabilityId)
     {
-        var resourceToDelete = await _resourceService.DeleteResourceAsync(id);
+        var providerToDelete = await _providerService.DeleteProviderAsync(id);
 
-        if (!resourceToDelete)
+        if (!providerToDelete)
         {
             return NotFound();
         }

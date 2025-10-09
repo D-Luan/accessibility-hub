@@ -1,6 +1,6 @@
 ﻿namespace AccessibilityHub.WebApp.Dtos
 {
-    public class ResourceDto
+    public class ProviderDto
     {
         public int Id { get; set; }
 

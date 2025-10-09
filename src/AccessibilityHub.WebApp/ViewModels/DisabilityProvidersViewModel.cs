@@ -2,11 +2,11 @@
 
 namespace AccessibilityHub.WebApp.ViewModels;
 
-public class DisabilityResourcesViewModel
+public class DisabilityProvidersViewModel
 {
     public int DisabilityId { get; set; }
 
     public required string DisabilityName { get; set; }
 
-    public required IEnumerable<ResourceDto> Resources { get; set; }
+    public required IEnumerable<ProviderDto> Providers { get; set; }
 }
