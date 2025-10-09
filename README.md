@@ -43,11 +43,12 @@ The current version (MVP) of the Accessibility Hub provides the core functionali
     - **Browse Categories:** Users can view a list of all pre-defined disability categories available on the platform.
     - **Dedicated Category Pages:** Each category has a dedicated details page that serves as a hub for its specific resources.
 
-- **Resource Management:**
-
-    - **List Resources by Category:** View a list of all relevant resources (companies, tools, communities) associated with a specific disability.
-    - **Add New Resources:** Ability to add new resources to a disability category through a dedicated creation form.
-    - **View Resource Details:** Access a details page for each individual resource (Future work includes full Edit and Delete functionality for resources).*
+- **Provider Management (Complete CRUD):**
+    - **List Providers by Category:** View a list of all relevant providers (companies, tools, communities) associated with a specific disability.
+    - **View Provider Details:** Access a dedicated page with detailed information for each provider.
+    - **Add New Providers:** Ability to add new providers to a disability category through a creation form.
+    - **Edit Existing Providers:** Full capability to edit the information of an existing provider.
+    - **Delete Providers:** Ability to remove providers from the system.
 
 - **Architecture & Best Practices:**
 
@@ -59,9 +60,9 @@ The current version (MVP) of the Accessibility Hub provides the core functionali
 
 **Current status of the project's MVP. As the focus is on backend functionality, the UI has been kept clean and functional. The frontend will be enhanced in a future phase.**
 
-![Initial Page](docs/images/disabilities-index.png)
-![Resource Create Page](docs/images/resource-create.png)
-![Details Resources Page](docs/images/resource-index.png)
+![Initial Page](docs/images/disabilities-services.png)
+![Resource Create Page](docs/images/create-provider.png)
+![Details Resources Page](hearing-services.png)
 
 ## Prerequisites
 
@@ -84,15 +85,13 @@ You will need the following tools installed on your machine:
 
 6. **Run the Application:** `dotnet run`
 
-## Download
-
-Link to download the project as a .zip file: https://codeload.github.com/D-Luan/accessibility-hub/zip/refs/heads/main
-
 ## Stack
 
-- **Technologies**: C#, Razor, Blazor, .NET 9, ASP.NET Core MVC, PostgreSQL, Entity Framework Core, LINQ
-- **Tools**: Git, Visual Studio 2022, VS Code, Postman, .NET CLI
-- **Methodology**: Kanban, Trello
+- **Backend:** C#, .NET 9, ASP.NET Core MVC, RESTful APIs, Entity Framework Core
+- **Frontend:** HTML, CSS, JavaScript, Razor Pages
+- **Database:** PostgreSQL
+- **Architecture:** Clean Architecture (3-Layer), SOLID, OOP
+- **Tools:** Git, GitHub, Visual Studio 2022, .NET CLI, Trello
 
 ## License
 
