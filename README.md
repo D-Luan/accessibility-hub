@@ -62,7 +62,7 @@ The current version (MVP) of the Accessibility Hub provides the core functionali
 
 ![Initial Page](docs/images/disabilities-services.png)
 ![Resource Create Page](docs/images/create-provider.png)
-![Details Resources Page](hearing-services.png)
+![Details Resources Page](docs/images/hearing-services.png)
 
 ## Prerequisites
 
